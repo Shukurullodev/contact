@@ -38,11 +38,13 @@ class ContactItem extends StatelessWidget {
             ]),
         child: Row(
           children: [
-            Icon(
-              Icons.person_outline_rounded,
-              size: 60,
-              color: isSelected ? Colors.white : Colors.black38,
+            Image.asset(
+              iconPath,
+              width: 60,
+              height: 60,
+              // color: isSelected ? Colors.white : Colors.black38,
             ),
+            SizedBox(width: 10,),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

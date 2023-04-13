@@ -84,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: List.generate(
           list.length,
           (index) => ContactItem(
-            iconPath: '',
+            iconPath: list[index].iconPath,
             contactName: list[index].contactName,
             number: list[index].contactNumber,
             onTap: () {
